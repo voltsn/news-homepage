@@ -1,0 +1,31 @@
+@import "variables";
+
+body{
+  font-family: $fontStack;
+  height: 100%;
+}
+
+button{
+  font: inherit;
+}
+
+img{
+  width: 100%;
+}
+
+.section-size{
+  margin: 0 auto;
+  max-width: 90rem;
+  width: 93%;
+}
+
+.btn{
+  background-color: $softRed;
+  border: none;
+  color: $offWhite;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 10px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+}

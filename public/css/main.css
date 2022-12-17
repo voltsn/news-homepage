@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+  border: 1px solid red;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/public/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+}
+body {
+  font-family: "Inter";
+  height: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.section-size {
+  margin: 0 auto;
+  max-width: 90rem;
+  width: 93%;
+}
+
+.btn {
+  background-color: hsl(5deg, 85%, 63%);
+  border: none;
+  color: hsl(36deg, 100%, 99%);
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 10px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+}
+
+.main-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu {
+  display: none;
+}
+
+.main-logo {
+  width: 46px;
+}
+
+/*# sourceMappingURL=main.css.map */
