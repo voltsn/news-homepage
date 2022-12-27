@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   min-height: 100%;
-  border: 1px solid red;
 }
 
 *,
@@ -42,15 +41,23 @@ img {
   color: hsl(36deg, 100%, 99%);
   cursor: pointer;
   font-weight: 700;
-  letter-spacing: 10px;
+  letter-spacing: 0.625rem;
   padding: 1em 2em;
   text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  gap: 3.75rem;
 }
 
 .main-header {
   align-items: center;
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .main-menu {
@@ -59,6 +66,78 @@ img {
 
 .main-logo {
   width: 46px;
+}
+
+.title-heading {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.title-text {
+  color: hsl(236deg, 13%, 42%);
+}
+.title-text p {
+  margin: 1.75rem 0;
+  line-height: 1.5em;
+  font-size: 0.9375rem;
+}
+
+.latest-section {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+  padding: 1.875rem 1.25rem;
+}
+.latest-section .latest-heading {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 2rem;
+}
+
+.latest-article {
+  padding-bottom: 2.25rem;
+  padding-top: 2.25rem;
+}
+.latest-article + .latest-article {
+  border-top: 1px solid hsl(236deg, 13%, 42%);
+  margin-top: 1.875rem;
+}
+.latest-article .latest-article-heading {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.latest-article .latest-article-text {
+  color: hsl(233deg, 8%, 79%);
+  line-height: 1.7;
+}
+
+.popular-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 5.0625rem;
+}
+
+.popular-article {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.popular-article .popular-article-header {
+  flex-basis: 6.25rem;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.popular-article .popular-article-heading {
+  margin-bottom: 0.5rem;
+}
+.popular-article .popular-article-heading .popular-article-rating {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.popular-article .popular-article-text {
+  color: hsl(236deg, 13%, 42%);
+  line-height: 1.7;
 }
 
 /*# sourceMappingURL=main.css.map */

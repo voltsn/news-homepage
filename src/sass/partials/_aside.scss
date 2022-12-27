@@ -1,0 +1,31 @@
+.latest-section{
+    background-color: $veryDarkBlue;
+    color: $offWhite;
+    padding: 1.875rem 1.25rem;
+
+    .latest-heading{
+        color: $softOrange;
+        font-size: 2rem;
+    }
+}
+
+.latest-article{
+    padding-bottom: 2.25rem;
+    padding-top: 2.25rem;
+
+    & + .latest-article{
+        border-top: 1px solid $darkBlue;
+        margin-top: 1.875rem;
+    }
+
+    .latest-article-heading{
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+
+    .latest-article-text{
+        color: $GrayishBlue;
+        line-height: 1.7;
+    }
+}
