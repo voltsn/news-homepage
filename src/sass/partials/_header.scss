@@ -9,8 +9,31 @@
 
 .main-menu{
   display: none;
+  list-style: none;
+
+  .main-nav-link{
+    text-decoration: none;
+    color: $veryDarkBlue;
+  }
 }
 
 .main-logo{
   width: 46px;
+}
+
+@media screen and (min-width: 40rem){
+  .mobile-nav-toggle{
+    display: none;
+  }
+
+  .main-menu{
+    display: block;
+    display: flex;
+    gap: 2.375rem;
+
+    .main-nav-link{
+      color: $darkBlue;
+    }
+
+  }
 }

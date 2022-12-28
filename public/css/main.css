@@ -29,9 +29,9 @@ img {
   width: 100%;
 }
 
-.section-size {
+.container {
   margin: 0 auto;
-  max-width: 90rem;
+  max-width: 70.625rem;
   width: 93%;
 }
 
@@ -41,7 +41,6 @@ img {
   color: hsl(36deg, 100%, 99%);
   cursor: pointer;
   font-weight: 700;
-  letter-spacing: 0.625rem;
   padding: 1em 2em;
   text-transform: uppercase;
 }
@@ -51,6 +50,30 @@ img {
   gap: 3.75rem;
 }
 
+@media screen and (min-width: 63.75rem) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 1.8125rem;
+    row-gap: 4.5rem;
+  }
+  .grid .title-section {
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: auto/1fr;
+  }
+  .grid .title-section .title-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .grid .latest-section {
+    grid-column: span 2;
+  }
+  .grid .popular-section {
+    flex-direction: row;
+    grid-column: 1/5;
+  }
+}
 .main-header {
   align-items: center;
   display: flex;
@@ -62,12 +85,30 @@ img {
 
 .main-menu {
   display: none;
+  list-style: none;
+}
+.main-menu .main-nav-link {
+  text-decoration: none;
+  color: hsl(240deg, 100%, 5%);
 }
 
 .main-logo {
   width: 46px;
 }
 
+@media screen and (min-width: 40rem) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+  .main-menu {
+    display: block;
+    display: flex;
+    gap: 2.375rem;
+  }
+  .main-menu .main-nav-link {
+    color: hsl(236deg, 13%, 42%);
+  }
+}
 .title-heading {
   font-size: 2.6rem;
   font-weight: 800;
@@ -75,13 +116,39 @@ img {
 
 .title-text {
   color: hsl(236deg, 13%, 42%);
+  margin-top: 1.75rem;
 }
 .title-text p {
-  margin: 1.75rem 0;
   line-height: 1.5em;
   font-size: 0.9375rem;
 }
+.title-text .btn {
+  margin-top: 1.75rem;
+  letter-spacing: 0.225rem;
+  font-size: 0.9375rem;
+}
 
+@media screen and (min-width: 63.75rem) {
+  .title-body {
+    display: flex;
+    margin-top: 2.0625rem;
+  }
+  .title-heading {
+    font-size: 3.3rem;
+    font-weight: 850;
+    margin-right: 2.125rem;
+  }
+  .title-text {
+    margin-top: 0;
+    flex-shrink: 1.3;
+    display: grid;
+  }
+  .title-text .btn {
+    margin-top: 0;
+    align-self: end;
+    justify-self: start;
+  }
+}
 .latest-section {
   background-color: hsl(240deg, 100%, 5%);
   color: hsl(36deg, 100%, 99%);
@@ -93,7 +160,6 @@ img {
 }
 
 .latest-article {
-  padding-bottom: 2.25rem;
   padding-top: 2.25rem;
 }
 .latest-article + .latest-article {
@@ -109,6 +175,11 @@ img {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 63.75rem) {
+  .latest-section {
+    padding: 2.375rem 1.74rem;
+  }
+}
 .popular-section {
   display: flex;
   flex-direction: column;

@@ -10,7 +10,6 @@
 }
 
 .latest-article{
-    padding-bottom: 2.25rem;
     padding-top: 2.25rem;
 
     & + .latest-article{
@@ -27,5 +26,11 @@
     .latest-article-text{
         color: $GrayishBlue;
         line-height: 1.7;
+    }
+}
+
+@media screen and (min-width: 63.75rem){
+    .latest-section{
+        padding: 2.375rem 1.74rem;
     }
 }
