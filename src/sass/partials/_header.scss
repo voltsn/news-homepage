@@ -7,9 +7,35 @@
   margin-bottom: 1.75rem;
 }
 
-.main-menu{
+.main-nav{
   display: none;
+  background-color: $offWhite;
+  height: 100vh;
+  width: 70%;
+  top: 0;
+  right: 0;
+  padding-top: 8rem;
+  position: absolute;
+
+  &::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 100%;
+  }
+}
+
+.main-menu{
   list-style: none;
+  padding-left: 1.5em;
+
+  .main-nav-item + .main-nav-item{
+    margin-top: 1em;
+  }
+  
 
   .main-nav-link{
     text-decoration: none;
@@ -25,15 +51,32 @@
   width: 46px;
 }
 
+.mobile-nav-toggle{
+  z-index: 1;
+}
+
 @media screen and (min-width: 40rem){
   .mobile-nav-toggle{
     display: none;
+  }
+
+  .main-nav{
+    height: auto;
+    width: auto;
+    padding-top: unset;
+    position: static;
+    display: block;
+  
   }
 
   .main-menu{
     display: block;
     display: flex;
     gap: 2.375rem;
+
+    .main-nav-item + .main-nav-item{
+      margin-top: unset;
+    }
 
     .main-nav-link{
       color: $darkBlue;
