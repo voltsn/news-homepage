@@ -149,7 +149,7 @@ img {
   }
 }
 .title-heading {
-  font-size: 2.6rem;
+  font-size: clamp(2.6rem, 2.3535rem + 1.0516vw, 3.3rem);
   font-weight: 800;
 }
 
@@ -176,7 +176,6 @@ img {
     margin-top: 2.0625rem;
   }
   .title-heading {
-    font-size: 3.3rem;
     font-weight: 850;
     margin-right: 2.125rem;
   }
