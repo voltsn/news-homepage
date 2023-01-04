@@ -16,10 +16,15 @@
         margin-top: 1.75rem;
         letter-spacing: 0.225rem;
         font-size: $fontSizeText;
+
+        &:hover{
+            background-color: $veryDarkBlue;
+        }
     }
+
 }
 
-@media screen and (min-width: 63.75rem){
+@media screen and (min-width: 39.6875rem){
 
     .title-body{
         display: flex;

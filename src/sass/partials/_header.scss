@@ -14,6 +14,10 @@
   .main-nav-link{
     text-decoration: none;
     color: $veryDarkBlue;
+
+    &:hover{
+      color: $softRed;
+    }
   }
 }
 
